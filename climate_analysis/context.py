@@ -2,7 +2,8 @@
 from .evidence import records
 def decide(db,known_at,comparison):
  if comparison['status']!='可比':return {'id':comparison['id'],'status':'待核实'}
- rules=[r for r in records(db,'rule',known_at) if r['payload']['region']==comparison['region']]
+ rules=[r for r in records(db,'rule',known_at) if r['payload']['region']==comparison['region']
+   and r['payload']['metric']==comparison['metric'] and r['payload']['unit']==comparison['unit']]
  if not rules:return {'id':comparison['id'],'status':'无规则'}
  rule=rules[-1];p=rule['payload']
  if p['metric']!=comparison['metric'] or p['unit']!=comparison['unit']:return {'id':comparison['id'],'status':'口径不符'}

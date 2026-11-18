@@ -19,7 +19,12 @@
             "metric": "energy",
             "region": "global",
             "unit": "资料单位",
-            "value": 1.2
+            "value": 1.2,
+            "period_start": "2026-06-01",
+            "period_end": "2026-06-30",
+            "published_at": "2026-07-28T00:00:00+00:00",
+            "revision_status": "preliminary",
+            "spatial_coverage": "global"
           }
         }
       ]
@@ -81,7 +86,242 @@
             "metric": "energy",
             "region": "global",
             "unit": "资料单位",
-            "value": 1.5
+            "value": 1.5,
+            "period_start": "2026-06-01",
+            "period_end": "2026-06-30",
+            "published_at": "2026-08-14T00:00:00+00:00",
+            "revision_status": "revised",
+            "spatial_coverage": "global"
+          }
+        }
+      ]
+    },
+    {
+      "source": "海平面服务机构",
+      "document_id": "sea-level-202606",
+      "revision": "r1",
+      "received_at": "2026-07-10T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "obs-sl-202606",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "sea_level",
+            "region": "global_ocean",
+            "unit": "mm",
+            "value": 3.4,
+            "period_start": "2026-06-01",
+            "period_end": "2026-06-30",
+            "published_at": "2026-07-09T00:00:00+00:00",
+            "revision_status": "final",
+            "spatial_coverage": "global_ocean"
+          }
+        }
+      ]
+    },
+    {
+      "source": "海平面服务机构",
+      "document_id": "sea-level-202607",
+      "revision": "r1",
+      "received_at": "2026-08-12T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "obs-sl-202607",
+          "revision": "r1",
+          "valid_from": "2026-08-01",
+          "payload": {
+            "metric": "sea_level",
+            "region": "global_ocean",
+            "unit": "mm",
+            "value": 3.8,
+            "period_start": "2026-07-01",
+            "period_end": "2026-07-31",
+            "published_at": "2026-08-10T00:00:00+00:00",
+            "revision_status": "final",
+            "spatial_coverage": "global_ocean"
+          }
+        }
+      ]
+    },
+    {
+      "source": "海洋档案机构",
+      "document_id": "ohc-upper-q2-2026",
+      "revision": "r1",
+      "received_at": "2026-07-25T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "obs-ohc-0700-q2",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "热含量单位",
+            "value": 8.6,
+            "period_start": "2026-04-01",
+            "period_end": "2026-06-30",
+            "published_at": "2026-07-22T00:00:00+00:00",
+            "revision_status": "final",
+            "spatial_coverage": "ocean_0_700m"
+          }
+        }
+      ]
+    },
+    {
+      "source": "海洋档案机构",
+      "document_id": "ohc-deep-q2-2026",
+      "revision": "r1",
+      "received_at": "2026-08-20T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "observation",
+          "id": "obs-ohc-7002000-q2",
+          "revision": "r1",
+          "valid_from": "2026-08-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "深层热含量单位",
+            "value": 3.3,
+            "period_start": "2026-04-01",
+            "period_end": "2026-06-30",
+            "published_at": "2026-08-18T00:00:00+00:00",
+            "revision_status": "final",
+            "spatial_coverage": "ocean_700_2000m"
+          }
+        }
+      ]
+    },
+    {
+      "source": "参照机构",
+      "document_id": "reference-ocean",
+      "revision": "r1",
+      "received_at": "2026-07-26T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "reference",
+          "id": "ref-sl-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "sea_level",
+            "region": "global_ocean",
+            "unit": "mm",
+            "value": 2
+          }
+        },
+        {
+          "kind": "reference",
+          "id": "ref-ohc-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "热含量单位",
+            "value": 8
+          }
+        },
+        {
+          "kind": "reference",
+          "id": "ref-ohc-deep-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "深层热含量单位",
+            "value": 3
+          }
+        }
+      ]
+    },
+    {
+      "source": "业务部门",
+      "document_id": "rule-ocean",
+      "revision": "r1",
+      "received_at": "2026-07-27T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "rule",
+          "id": "rule-sl-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "sea_level",
+            "region": "global_ocean",
+            "unit": "mm",
+            "threshold": 1,
+            "direction": "above",
+            "action": "简报"
+          }
+        },
+        {
+          "kind": "rule",
+          "id": "rule-ohc-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "热含量单位",
+            "threshold": 0.5,
+            "direction": "above",
+            "action": "简报"
+          }
+        },
+        {
+          "kind": "rule",
+          "id": "rule-ohc-deep-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "metric": "ocean_heat",
+            "region": "global_ocean",
+            "unit": "深层热含量单位",
+            "threshold": 0.4,
+            "direction": "above",
+            "action": "简报"
+          }
+        }
+      ]
+    },
+    {
+      "source": "简报编制组",
+      "document_id": "briefing-claims",
+      "revision": "r1",
+      "received_at": "2026-07-27T00:00:00+00:00",
+      "records": [
+        {
+          "kind": "claim",
+          "id": "claim-1",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "statement": "地球能量盈余经海洋增温推动海平面同步上升",
+            "metrics": ["energy", "ocean_heat", "sea_level"],
+            "scope": "global_ocean",
+            "require_status": ["revised", "final"],
+            "require_coverage_exact": [],
+            "expect_direction": "positive"
+          }
+        },
+        {
+          "kind": "claim",
+          "id": "claim-2",
+          "revision": "r1",
+          "valid_from": "2026-07-01",
+          "payload": {
+            "statement": "深层海洋在同期承接了能量盈余",
+            "metrics": ["energy", "ocean_heat"],
+            "scope": "ocean_700_2000m",
+            "require_status": ["revised", "final"],
+            "require_coverage_exact": ["ocean_heat"],
+            "expect_direction": "positive"
           }
         }
       ]
